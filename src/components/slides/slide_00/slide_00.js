@@ -33,7 +33,7 @@ export default class slidestatelide_00 extends Slide {
             <div className='text text_4'></div>
             <div className='photo photo_4'></div>
           </div>
-          <div className='id'>L.RU.MKT.CC.11.2016.1556</div>
+          <div className='id'></div>
         </div>
       </div>
     );
