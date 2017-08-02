@@ -1,0 +1,32 @@
+.slide_1_06 {
+  background-image: url(img/1_06.jpg);
+  background-size: 100%;
+  .text_1 {
+    position: absolute;
+    left: 33px;
+    top: 36px;
+    width: 784px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .panel {
+    left: -50px;
+    top: 164px;
+    width: 492px;
+    height: 331px;
+    &__text_1 {
+      left: 54%;
+      background-image: url(img/text_2.png);
+      width: 360px;
+      height: 239px;
+    }
+  }
+  .button{
+    position: absolute;
+    left: 34px;
+    top: 555px;
+  }
+
+}

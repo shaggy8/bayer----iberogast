@@ -1,0 +1,117 @@
+.slide_1_09{
+  background: url('./img/1_09.jpg');
+  background-size: contain;
+  position: relative;
+  .logo{
+    position: absolute;
+    left: 92px;
+    top: 65.5px;
+    width: 171px;
+    height: 48px;
+    background: url('./img/logo.png');
+    background-size: contain;
+    animation: fadeInRightShort .3s both;
+  }
+  .box{
+    position: absolute;
+    left: 739.5px;
+    top: 388.5px;
+    width: 276.5px;
+    height: 318.5px;
+    background: url('./img/box.png');
+    background-size: contain;
+    animation: fadeIn .3s both;
+  }
+  .guts{
+    position: absolute;
+    /* width: 454px;
+    left: 471px;
+    top: -53.5px;
+    height: 882.5px; */
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;    
+    background: url('./img/1_09.gif');
+    background-size: contain;
+    animation: fadeIn .3s both;
+  }
+  .text_1{
+    position: absolute;
+    left: 51.5px;
+    top: 147.5px;
+    width: 442.5px;
+    height: 45px;
+    background-image: url('./img/text_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .3s;
+  }
+  .text_2{
+    position: absolute;
+    left: 51.5px;
+    top: 220.5px;
+    width: 343px;
+    height: 48px;
+    background-image: url('./img/text_2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .4s;
+  }
+  .text_3{
+    position: absolute;
+    left: 51.5px;
+    top: 295.5px;
+    width: 341.5px;
+    height: 48.5px;
+    background-image: url('./img/text_3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .5s;
+  }
+  .text_4{
+    position: absolute;
+    left: 51.5px;
+    top: 370.5px;
+    width: 293px;
+    height: 24px;
+    background-image: url('./img/text_4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .6s;
+  }
+  .text_5{
+    position: absolute;
+    left: 51.5px;
+    top: 419px;
+    width: 382.5px;
+    height: 76px;
+    background-image: url('./img/text_5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .7s;
+  }
+  .text_6{
+    position: absolute;
+    left: 51.5px;
+    top: 524px;
+    width: 331.5px;
+    height: 21.5px;
+    background-image: url('./img/text_6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .8s;
+  }
+  .text_7{
+    position: absolute;
+    left: 51.5px;
+    top: 572.5px;
+    width: 343.5px;
+    height: 48.5px;
+    background-image: url('./img/text_7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .9s;
+  }
+
+}

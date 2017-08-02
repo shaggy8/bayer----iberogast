@@ -1,0 +1,15 @@
+.slide_1_02 {
+  background-image: url(./img/1_02.jpg);
+  background-size: 100%;
+  .text {
+    position: absolute;
+    left: 63px;
+    top: 162px;
+    width: 332px;
+    height: 455px;
+    background-image: url(./img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+}

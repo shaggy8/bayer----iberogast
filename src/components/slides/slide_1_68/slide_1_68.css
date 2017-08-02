@@ -1,0 +1,52 @@
+.slide_1_68{
+
+  *{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background-image: url("img/bg.jpg");
+    animation: fadeIn .3s both;
+  }
+
+  .panel{
+    left: -50px;
+    top: 83px;
+    width: 505px;
+    height: 468px;
+    box-shadow: -38px 12px 35px rgba(0, 0, 0, 0.19);
+    .panel__text{
+      position: absolute;
+      left: 252px;
+      top: 224px;
+      width: 287px;
+      height: 369px;
+      background-image: url(img/panel__text.png);
+    }
+  }
+
+  .layer_1{
+    position: absolute;
+    left: 335px;
+    top: 30px;
+    width: 676px;
+    height: 668px;
+    background-image: url(img/layer_1.png);
+    animation: fadeIn .5s both;
+  }
+
+  .shadow{
+    position: absolute;
+    left: 342px;
+    top: 83px;
+    width: 157px;
+    height: 333px;
+    background-image: url(img/shadow.png);
+    animation: fadeIn .3s 1.5s both;    
+  }
+
+}

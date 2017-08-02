@@ -1,0 +1,205 @@
+.slide_1_31{
+
+  *{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .toggle{
+    position: absolute;
+    left: 51px;
+    top: 578px;
+    animation: fadeIn .3s 1.2s both;
+  }
+
+  .header{
+    position: absolute;
+    left: 34.5px;
+    top: 32px;
+    width: 572.5px;
+    height: 29.5px;
+    background-image: url(img/header.png);
+    animation: fadeInRightShort .3s;
+  }
+
+
+  .panel{
+    position: absolute;
+    left: -33px;
+    top: 362px;
+    width: 550px;
+    height: 278px;
+    box-shadow: -38px 12px 35px rgba(0, 0, 0, 0.19);
+    transition: .2s linear;
+    
+    .panel__text_1{
+      position: absolute;
+      left: 295px;
+      top: 153px;
+      width: 415px;
+      height: 241px;
+      background-image: url(img/panel__text.png);
+      animation: fadeIn .5s .1s both;
+    }
+    .panel__text_2{
+      display: none;
+      position: absolute;
+      left: 295px;
+      top: 153px;
+      width: 410px;
+      height: 251px;
+      background-image: url(img/panel__text_2.png);
+    }
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background: url("img/1_31.jpg");
+    background-size: contain;
+    transition: .5s linear;
+    &_1{
+      .layer_1{
+        position: absolute;
+        left: 52px;
+        top: 169px;
+        width: 925px;
+        height: 457px;
+        background-image: url("img/layer_1.png");
+      }
+      .bars_1{
+        position: absolute;
+        left: 553px;
+        top: 195px;
+        width: 361px;
+        height: 408px;
+        background-image: url("img/bars_1.png");
+        background-size: 352px 388px;
+        animation: grow 1s both;
+        transform-origin: top;
+      }
+
+      .lens{
+        position: absolute;
+        left: 821px;
+        top: 182px;
+        width: 103px;
+        height: 103px;        
+        transform: scale(1);
+        border: 1px dashed #124b5a;
+        border-radius: 50%;
+        animation: fadeIn .5s .7s both linear;
+        &.active{          
+          left: 817px;
+          top: 193px;
+          width: 103px;
+          height: 103px;
+          background-color: #ebf9fc;
+          transition: .7s linear;
+          animation: lens .7s both linear;
+          .lens__graph{
+            position: absolute;
+            left: -5px;
+            top: -28px;
+            width: 116px;
+            height: 150px;
+            transform: scale(.5);
+            background-image: url("img/lens__graph.png");            
+          }
+        }
+      }
+
+    }
+    &_2{
+      display: none;
+      /* animation: fadeIn .3s; */
+      .layer_2{
+        position: absolute;
+        left: 52px;
+        top: 157px;
+        width: 925px;
+        height: 467px;
+        background-image: url("img/layer_2.png");
+      }
+
+      .bars_2{
+        position: absolute;
+        left: 553px;
+        top: 195px;
+        width: 361px;
+        height: 408px;
+        background-image: url("img/bars_2.png");
+        background-size: 352px 388px;
+        animation: grow 1s both;
+        transform-origin: 0 46%;
+      }
+    }
+  }
+
+  .popupL{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 1024px;
+    height: 768px;
+    background-color: rgba(18,72,90,.3);
+    animation: fadeIn .5s both;
+    z-index: 1;
+    
+    .popupL__content{
+      position: absolute;
+      left: 0;
+      top: 126px;
+      width: 1024px;
+      height: 561px;
+      background-image: url("img/popupL__content.jpg");
+    }
+  }
+
+  .popupL__btn{
+    position: absolute;
+    left: 970px;
+    top: 149px;
+    width: 62px;
+    height: 58px;
+    z-index: 1;
+  }
+
+  .popupL_show{
+    display: block;
+  }
+
+  &[data-state='1']{
+    .bg_1{
+      /* animation: fadeOut .3s both; */
+      display: none;
+    }
+    .bg_2{
+      display: block;
+    }
+    .panel{
+      top: 287px;
+      left: -39px;      
+      width: 581px;
+      height: 353px;
+    }
+    .panel__text_1{
+      animation: fadeOut .2s .1s both;
+    }
+    .panel__text_2{
+      display: block;
+      animation: fadeIn .5s both;
+    }
+  }
+}
+
+
+@keyframes lens{
+  0%{
+    transform: scale(1);
+  }
+  100%{   
+    transform: scale(1.8);
+  }
+}

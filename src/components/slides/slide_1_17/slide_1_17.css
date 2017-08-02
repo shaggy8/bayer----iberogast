@@ -1,0 +1,26 @@
+.slide_1_17{
+  background: url('./img/1_17.jpg');
+  background-size: contain;
+  * {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo{
+    position: absolute;
+    left: 51.5px;
+    top: 165.5px;
+    width: 226px;
+    height: 68px;
+    background-image: url('./img/logo.png');
+    animation: fadeInRightShort .3s both;
+  }
+  .text{
+    position: absolute;
+    left: 53px;
+    top: 274.5px;
+    width: 280.5px;
+    height: 70.5px;
+    background-image: url('./img/text.png');
+    animation: fadeInRightShort .3s both;
+  }
+}

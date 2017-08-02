@@ -1,0 +1,52 @@
+.slide_3_119{
+  *{
+    background-repeat: no-repeat;
+  }
+  .line{
+    position: absolute;
+    left: 65px;
+    top: 200px;
+    width: 302px;
+    border: 1px solid #124b5a;
+    animation: fadeInRightShort .3s both;
+  }
+  .patient{
+    position: absolute;
+    left: 377px;
+    top: 17.5px;
+    width: 510.5px;
+    height: 721.5px;
+    background: url('./img/patient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .text{
+    position: absolute;
+    left: 64px;
+    animation: fadeInRightShort .3s both;
+  }
+  .text_1{
+    top: 151px;
+    width: 296px;
+    height: 29px;
+    background-image: url(./img/text_1.png);
+    background-size: 100%;
+  }
+  .text_2{
+    top: 246px;
+    width: 268px;
+    height: 164px;
+    background-image: url(./img/text_2.png);
+    background-size: 100%;
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    /*background-image: url(./img/bg.jpg);*/
+    background-image: url(./img/3_119.gif);
+    background-size: 100%;
+  }
+
+}

@@ -1,0 +1,60 @@
+.slide_1_48{
+  background-image: url(img/1_48.jpg);
+  background-size: contain;
+  *{
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  .header{
+    left: 34px;
+    top: 36px;
+    width: 852.5px;
+    height: 58px;
+    background-image: url(img/header.png);
+    animation: fadeInRightShort .3s both;
+  }
+
+  .text{
+    left: 51px;
+    top: 186.5px;
+    width: 426px;
+    height: 111.5px;
+    background-image: url(img/text.png);
+    animation: fadeIn .3s both;
+  }
+
+  .panel{
+    left: -32px;
+    top: 351.5px;
+    width: 535px;
+    height: 262.5px;   
+    .text-on-panel{
+      position: absolute;
+      width: 378.5px;
+      height: 132px;
+      transform: translate(-48%, -52%);
+      background-image: url(img/text-on-panel.png);
+    }
+  }
+
+  .graph-coord{
+    left: 555px;
+    top: 175px;
+    width: 414px;
+    height: 500px;
+    background-image: url('img/graph-coord.png');
+    animation: fadeIn .3s both;
+  }
+
+  .graph{
+    position: absolute;
+    left: 624px;
+    top: 253px;
+    width: 339px;
+    height: 357px;    
+    background-image: url(img/graph.png);
+    animation: fadeIn 1s both .15s;
+  }
+}

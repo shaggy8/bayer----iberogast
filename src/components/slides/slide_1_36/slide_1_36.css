@@ -1,0 +1,48 @@
+.slide_1_36{
+
+  *{
+    background-size: contain;
+  }
+
+  .panel{
+    left: -40px;
+    top: 123px;
+    width: 485px;
+    height: 343px;
+    box-shadow: -38px 12px 35px rgba(0, 0, 0, 0.19);
+    .panel__text{
+      position: absolute;
+      left: 252px;
+      top: 164px;
+      width: 313px;
+      height: 263px;
+      background-image: url(img/panel__text.png);
+    }
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background-image: url("img/bg.jpg");
+    
+    .scope{
+      position: absolute;
+      left: 333px;
+      top: 53px;
+      width: 310px;
+      height: 592px;
+      background-image: url("img/scope.png");
+      animation: fadeIn .5s both;
+    }
+    .med{
+      position: absolute;
+      left: 551px;
+      top: 349px;
+      width: 297px;
+      height: 341px;
+      background-image: url("img/med.png");
+      animation: fadeIn .5s both;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.slide_1_50 {
+  background-image: url(img/1_50.jpg);
+  background-size: 100%;
+  .toggle {
+    position: absolute;
+    left: 45px;
+    top: 445px;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+  .graph {
+    opacity: 0;
+    position: absolute;
+    transition: opacity .5s ease;
+  }
+  .panel {
+    left: -43px;
+    top: 131px;
+    width: 551px;
+    height: 396px;
+    &__text {
+       left: 226px;
+       top: 88px;
+       width: 410px;
+       height: 200px;
+    }
+  }
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 39px;
+    width: 736px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+
+  .slide_state_1 {
+    animation: fadeIn .5s ease both 1.7s;
+  }
+
+  .descr_1 {
+    opacity: 0;
+    transition: opacity .5s ease;
+    position: absolute;
+    left: 34px;
+    top: 164px;
+    width: 355px;
+    height: 260px;
+    background-image: url(img/descr_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .descr_2 {
+    opacity: 0;
+    transition: opacity .5s ease;
+    position: absolute;
+    left: 35px;
+    top: 159px;
+    width: 399px;
+    height: 239px;
+    background-image: url(img/descr_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .graph_1 {
+    display: block;
+    left: 557px;
+    top: 166px;
+    width: 439px;
+    height: 454px;
+    background-image: url(img/graph_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .graph_2 {
+    left: 562px;
+    top: 160px;
+    width: 419px;
+    height: 461px;
+    background-image: url(img/graph_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .arrows_1 {
+    display: none;
+    position: absolute;
+    width: 240px;
+    height: 307px;
+    left: 51px;
+    bottom: 110px;
+    background-image: url(img/arrows_1.png);
+    background-size: 240px 307px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s both .15s;
+    transform-origin: 0% 100%;
+  }
+
+  .arrows_2 {
+    display: none;
+    position: absolute;
+    width: 245px;
+    height: 234px;
+    left: 42px;
+    bottom: 137px;
+    background-image: url(img/arrows_2.png);
+    background-size: 245px 234px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s both .15s;
+    transform-origin: 0% 70%;
+  }
+
+  &[data-state='0'] {
+    .descr_1 {
+      opacity: 1;
+    }
+    .graph_1 {
+     opacity: 1;
+    }
+    .arrows_1 {
+      display: block;
+    }
+  }
+
+  &[data-state='1'] {
+    .descr_2 {
+      opacity: 1;
+    }
+   .graph_2 {
+     opacity: 1;
+   }
+    .arrows_2 {
+      display: block;
+    }
+  }
+}
+

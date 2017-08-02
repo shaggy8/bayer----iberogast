@@ -1,0 +1,54 @@
+.slide_2_135{
+
+  *{
+    background-size: contain;
+  }
+
+  .bg_1{
+    position: absolute;
+    height: 768px;
+    width: 1024px;
+    background-image: url(img/2_135.jpg);    
+  }
+
+  .panel{
+    left: -48px;
+    top: 169px;
+    width: 670px;
+    height: 431px;
+  }
+  .panel__content{
+    position: absolute;
+    width: 633px;
+    height: 369px;
+    background-image: url(img/panel__content.png);
+  }
+
+  .panel__text{
+    position: absolute;
+    top: 209px;    
+    width: 501px;
+    height: 297px;
+    background-image: url(img/panel__text.png);
+  }
+  .panel__number{
+    position: absolute;
+    left: 174px;
+    top: 139px;
+    width: 248px;
+    height: 311px; 
+    background-image: url(img/panel__number.png);
+  }
+
+  .header{
+    position: absolute;
+    left: 34px;
+    top: 38px;
+    width: 555px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    animation: fadeInRightShort .3s;
+  }
+
+
+}

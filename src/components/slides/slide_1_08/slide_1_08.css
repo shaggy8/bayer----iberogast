@@ -1,0 +1,92 @@
+.slide_1_08 {
+  background-image: url(img/1_08.jpg);
+  background-size: 100%;
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 36px;
+    width: 670px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .panel {
+    top: 168px;
+    left: -125px;
+    height: 487px;
+    width: 516px;
+    .item_1 {
+      position: absolute;
+      left: 290px;
+      top: 204px;
+      width: 330px;
+      height: 260px;
+      background-image: url(img/item_1.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .button {
+      left: 290px;
+      top: 414px;
+    }
+  }
+  .btn-text {
+    left: 65%;
+    width: 113px;
+    height: 20px;
+    background-image: url(img/btn-text.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .item_2 {
+    position: absolute;
+    left: 329px;
+    top: 108px;
+    width: 346px;
+    height: 659px;
+    background-image: url(img/item_2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  /* Style for "item_3" */
+  .item_3 {
+    position: absolute;
+    display: none;
+    left: -13px;
+    top: 222px;
+    width: 978px;
+    height: 280px;
+    background-image: url(img/item_3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  /* Style for "item_4" */
+  .item_4 {
+    position: absolute;
+    display: none;
+    left: 299px;
+    top: 168px;
+    width: 432px;
+    height: 543px;
+    background-image: url(img/item_4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  &[data-state='1'] {
+    .panel {
+      transition: all .5s;
+      width: 1086px;
+    }
+    .item_1,
+    .item_2 {
+      display: none;
+    }
+    .item_3,
+    .item_4 {
+      animation: fadeIn .3s both;
+      display: block;
+    }
+  }
+}

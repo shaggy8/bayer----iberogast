@@ -1,0 +1,62 @@
+.slide_1_46{
+  background-image: url(img/1_46.jpg);
+  background-size: contain;
+  *{
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  .header{
+    left: 34.5px;
+    top: 38px;
+    width: 817.5px;
+    height: 58px;
+    background-image: url(img/header.png);
+    animation: fadeInRightShort .3s both;
+  }
+
+  .text{
+    left: 33.5px;
+    top: 164px;
+    width: 379.5px;
+    height: 288.5px;
+    background-image: url(img/text.png);
+    animation: fadeInRightShort .3s both;
+  }
+
+  .panel{
+    left: -22px;
+    top: 477px;
+    width: 420.5px;
+    height: 153px;    
+    .text-on-panel{
+      position: absolute;
+      width: 288.5px;
+      height: 103px;
+      transform: translate(-52%, -52%);
+      background-image: url(img/text-on-panel.png);
+      animation: fadeIn .3s both;
+    }
+  }
+
+  .graph-coord{
+    left: 496px;
+    top: 180.5px;
+    width: 607px;
+    height: 436px;
+    background-image: url('img/graph-coord.png');
+    animation: fadeIn .3s both;
+  }
+
+  .graph-bars{
+    position: absolute;
+    left: 390px;
+    top: 235px;
+    width: 543px;
+    height: 412px;
+    background-image: url(img/graph-bars.png);
+    animation: grow 1.5s both;
+    transform-origin: 0 78%;
+  }
+}

@@ -1,0 +1,28 @@
+.slide_2_71{
+  background-image: url(img/2_71.jpg);
+  background-size: 100%;
+  .panel {
+    left: -42px;
+    top: calc(671px/2);
+    width: calc(1132px/2);
+    height: calc(630px/2);
+    &__text {
+      width: calc(882px/2);
+      height: calc(468px/2);
+      transform: translate(-45%, -50%);
+      background-image: url(img/text_inner.png);
+      animation: fadeIn .3s 1.2s both;
+    }
+  }
+  .text_outer {
+    position: absolute;
+    left: calc(101px/2);
+    top: calc(225px/2);
+    width: calc(950px/2);
+    height: calc(384px/2);
+    background-image: url('./img/text_outer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+}

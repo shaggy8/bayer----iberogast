@@ -1,0 +1,73 @@
+.slide_1_20{
+
+  *{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background: url("img/bg.jpg");
+    background-size: contain;
+  }
+
+  .panel{
+    left: -53px;
+    top: 134px;
+    width: 516px;
+    height: 461px;
+    box-shadow: -38px 12px 35px rgba(0, 0, 0, 0.19);
+    
+    .panel__text{
+      position: absolute;
+      left: 285px;
+      top: 188px;
+      width: 348px;
+      height: 269px;
+      background-image: url(img/panel__text.png);
+    }
+  }
+
+  .drop{
+    position: absolute;
+    left: 619px;
+    top: 219px;
+    width: 279px;
+    height: 249px;
+    background-image: url("img/drop.png");
+    animation: dropDown 1.5s cubic-bezier(0.34, 0.1, 0, 1.08) both;
+  }
+
+  .layer_1{
+    position: absolute;
+    left: 313px;
+    top: 167px;
+    width: 727px;
+    height: 434px;
+    background-image: url("img/layer_1.png");
+  }
+
+  .header{
+    position: absolute;
+    left: 35px;
+    top: 26px;
+    width: 393px;
+    height: 58px;
+    background-image: url("img/header.png"); 
+    animation: fadeInRightShort .3s both;
+  }
+
+  .button{
+    left: 230px;
+    top: 395px;
+  }
+}
+
+@keyframes dropDown{
+  from{
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+}

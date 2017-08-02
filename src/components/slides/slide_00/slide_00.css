@@ -1,0 +1,145 @@
+.slide_00 {
+  background-color: #aaa;
+  background-image: url(img/00.jpg);
+  background-size: 100%;  
+  .choose{
+    position: absolute;    
+    /* width: 626px;
+    height: 570px; */
+    width: 100%;
+    height: 100%;
+  }
+  .scenario{
+    .header {
+      position: absolute;
+      left: 39px;
+      top: 46.5px;
+      width: 313.5px;
+      height: 39.5px;
+      background-image: url(./img/header-1.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      animation: fadeInRightShort .3s both; 
+    }
+    .button-full{
+      position: absolute;
+      left: 61.5px;
+      top: 412.5px;      
+      width: 331px;
+      height: 88px;
+      background-image: url(./img/btn_full.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      animation: fadeIn .3s both; 
+    }
+    .button-short{
+      position: absolute;
+      left: 61.5px;
+      top: 302.5px;
+      width: 331px;
+      height: 88px;
+      background-image: url(./img/btn_short.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      animation: fadeIn .3s both; 
+    }
+  }
+  .patient{
+    display: none;
+    .id{
+		  position: absolute;        
+		  right: 1%;
+		  bottom: 12%;
+		  font-size: 8px;
+		  animation: fadeIn .3s both; 
+		}    
+    .header {
+      position: absolute;
+      left: 39px;
+      top: 51px;
+      width: 446.5px;
+      height: 35px;
+      background-image: url(./img/header-2.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      animation: fadeInRightShort .3s both; 
+    }
+    .green-box {
+      position: absolute;
+      left: -5px;
+      top: 532px;
+      width: 500px;
+      height: 130px;
+      background-color: #5fc82a;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05));
+      border: 2px solid rgba(4, 103, 35, 0.5);
+      box-shadow: 0 7px 11px rgba(0, 0, 0, 0.19), inset 0 2px 0 rgba(255, 255, 255, 0.5);
+      border-radius: 0 65px 65px 0;
+      box-sizing: border-box;
+      animation: fadeInRightShort .3s both; 
+      &_1 {
+        top: 172px;
+        animation-delay: .1s
+      }
+      &_2 {
+        top: 322px;
+        animation-delay: .2s
+      }
+      &_3 {
+        top: 473px;
+        animation-delay: .3s
+      }
+      &_4 {
+        animation-delay: .4s
+      }
+      .photo {
+        position: absolute;
+        left: 371px;
+        top: 51%;
+        transform: translate(0, -50%);
+        width: 122px;
+        height: 122px;
+        background-image: url(./img/photo_1.png);
+        background-size: 100%;
+        &_2 {
+          background-image: url(./img/photo_2.png);
+        }
+        &_3 {
+          /*background-image: url(./img/photo_3.png);*/
+          background-image: url(./img/photo_1.png);
+        }
+        &_4 {
+          background-image: url(./img/photo_4.png);
+        }
+      }
+    }
+    .text {
+      position: absolute;
+      left: 36px;
+      top: 50%;
+      transform: translate(0, -50%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      &_1 {
+        background-image: url(./img/text_1.png);
+        width: 301px;
+        height: 78px;
+      }
+      &_2 {
+        background-image: url(./img/text_2.png);
+        width: 258px;
+        height: 59px;
+      }
+      &_3 {
+        background-image: url(./img/text_3.png);
+        width: 233px;
+        height: 35px;
+      }
+      &_4 {
+        background-image: url(./img/text_4.png);
+        width: 272px;
+        height: 58px;
+      }
+    }  
+  }
+}

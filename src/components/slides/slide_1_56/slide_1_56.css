@@ -1,0 +1,30 @@
+.slide_1_56 {
+  background-image: url(img/1_56.jpg);
+  background-size: 100%;
+  .panel {
+    left: -60px;
+    top: 169px;
+    width: 670px;
+    height: 431px;
+    &__text {
+       top: 0;
+       left: 60px;
+       transform: none;
+       width: 540px;
+       height: 433px;
+      background-image: url(img/text_2.png);
+    }
+  }
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 38px;
+    width: 554px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+}
+

@@ -1,0 +1,42 @@
+.slide_3_146{
+  background-image: url(img/3_146.gif);
+  background-size: 100%;
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 40px;
+    width: 334px;
+    height: 57px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .man{
+    /* position: absolute;
+    left: 476.5px;
+    top: 27.5px;
+    width: 542.5px;
+    height: 701.5px;
+    background-image: url(img/3_146.gif);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+  }
+  .panel {
+    left: -75px;
+    top: 124px;
+    width: 548px;
+    height: 539px;
+    &__text_1 {
+      left: 54%;
+      background-image: url(img/text_2.png);
+      width: 406px;
+      height: 355px;
+      top: 213px;
+    }
+  }
+  .button{
+    position: absolute;
+    left: 270px;
+    top: 455px;
+  }
+}

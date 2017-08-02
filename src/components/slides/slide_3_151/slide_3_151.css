@@ -1,0 +1,154 @@
+.slide_3_151{
+  /* background-image: url(img/bg.jpg); */
+  width: 1024px;
+  height: 768px;
+  background-size: 100%; 
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background-size: 100%; 
+  }
+
+  .bg_1{
+    background-image: url(img/3_146.gif);
+  }
+  .bg_2{
+    /*background-image: url(img/bg_2.jpg);*/
+  }
+  .bg_3{
+    background-image: url(img/3_146_2.gif);
+  }
+  .text_1 {
+    position: absolute;
+    left: 35px; 
+    top: 40px;
+    width: 334px;
+    height: 57px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .man-bad{
+    /* position: absolute;
+    left: 476.5px;
+    top: 27.5px;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/3_146.gif);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+  }  
+  .panel {
+    left: -75px;
+    top: 124px;
+    width: 548px;
+    height: 539px;
+    &__text{
+      left: 54%;
+      width: 406px;
+      height: 355px;
+      top: 213px;
+    }
+    &__text_1 {
+      background-image: url(img/panel__text_1.png);
+    }
+    &__text_2 {
+      display: none;
+      background-image: url(img/panel__text_2.png);
+    }
+    &__text_3 {
+      display: none;
+      width: 394px;
+      height: 331px;
+      left: 55%;
+      background-image: url(img/panel__text_3.png);
+    }
+  }
+  .button{
+    position: absolute;
+    left: 270px;
+    top: 455px;
+  }
+
+  .rect_1{
+    position: absolute;
+    left: 64px;
+    top: 302px;
+    width: 893px;
+    height: 77px;
+    background-color: #5fc82a;
+    border-radius: 5px;
+    background-image: url(img/arrow.png);
+    background-size: 35px;
+    background-position-y: -4px;
+    animation: arrowsMove 1.5s linear;
+    animation-iteration-count: infinite;
+  }
+
+
+  .popup__content{
+    position: absolute;
+    left: 12px;
+    top: 50px;
+    width: 938px;
+    height: 432px;
+    background-image: url(img/popup__content.png);
+    background-size: 100%;
+  }
+
+
+  &[data-state='1']{
+    .bg_1,
+    .bg_2{
+      animation-name: fadeOut;
+      animation-fill-mode: both;
+      animation-duration: 2s;
+    }
+    .bg_2{
+      animation-delay: 2s;
+    }
+
+    .man-bad{
+      /*animation: fadeOut 0.8s 1.5s both;*/
+    }
+    .man-good{
+      /* position: absolute;
+      left: 476.5px;
+      top: 0px;
+      width: 50%;
+      height: 100%;
+      background-image: url(img/3_146_2.gif);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      animation: fadeIn 0.8s 1.5s both; */
+    }
+
+    .panel__text_1{
+     animation: fadeOut 2s forwards; 
+    }
+    .panel__text_2{
+    display: block;
+    animation: fadeIn .3s forwards, fadeOut 2s 2s forwards;
+    }
+
+    .panel__text_3{
+    display: block;
+    animation: fadeIn .3s forwards
+    }
+
+    .button.drip{
+    animation: fadeOut 1s 2s forwards;
+    }
+
+  }
+}
+
+@keyframes arrowsMove{
+  0%{
+    background-position: 0px -4px;
+  }
+  100%{
+    background-position: 35px -4px;
+  }
+}

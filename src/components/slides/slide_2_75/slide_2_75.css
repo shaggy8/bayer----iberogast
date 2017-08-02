@@ -1,0 +1,70 @@
+.slide_2_75{
+  background: url('./img/2_75.jpg');
+  background-size: contain;
+  position: relative;
+  .header{
+    position: absolute;
+    left: calc(69px/2);
+    top: calc(72px/2);
+    width: calc(1363px/2);
+    height: calc(51px/2);
+    background: url('./img/header.png');
+    background-size: contain;
+    animation: fadeInRightShort .3s both;
+  }
+  .text {
+    position: absolute;
+    left: calc(104px/2);
+    top: calc(342px/2);
+    width: calc(884px/2);
+    height: calc(148px/2);
+    background-image: url('./img/text.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both;
+  }
+  .graph{
+    position: absolute;
+    left: 583px;
+    top: 187.5px;
+    width: 418px;
+    height: 351.5px;
+    background-image: url('./img/graf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both;
+  }
+  .graph-lines{
+    position: absolute;
+    left: 631.5px;
+    top: 229px;
+    width: 332.5px;
+    height: 294px;
+    background-image: url('./img/graph-lines.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: growRight 1.3s .3s both;
+    transform-origin: left;
+  }
+  .panel{
+    left: -43px;      
+    top: calc(581px/2);
+    width: calc(1101px/2);
+    height: calc(635px/2);
+    .text_on_panel{
+      width: calc(650px/2);
+      height: calc(424px/2);
+      transform: translate(-55%, -55%);
+      background-image: url(img/text_on_panel.png);
+      animation: fadeIn .3s 1.2s both;    
+    }
+  }
+  .reference_text{
+  background: url('./img/reference_text.png');
+  background-size: contain;
+  width: 845.5px;
+  height: 69px;
+  top: 30%;
+  position: absolute;;
+  }
+}

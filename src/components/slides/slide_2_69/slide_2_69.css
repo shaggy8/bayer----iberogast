@@ -1,0 +1,25 @@
+.slide_2_69 {
+  background: url('./img/2_69.gif');
+  background-size: contain;
+  position: relative;
+  .patient{
+    position: absolute;
+    left: 306.5px;
+    top: 31px;
+    width: 633.5px;
+    height: 719.5px;
+    background: url('./img/patient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .text{
+    position: absolute;
+    left: calc(127px/2);
+    top: calc(302px/2);
+    width: calc(617px/2);
+    height: calc(757px/2);
+    background: url('./img/text.png');
+    background-size: contain;
+    animation: fadeInRightShort .3s both;
+  }
+}

@@ -1,0 +1,50 @@
+.slide_2_69_1 {
+  background: url('./img/2_69_1.gif');
+  background-size: contain;
+  position: relative;
+  color: #007290;
+  font-family: lato, sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  .patient{
+    position: absolute;
+    left: 339.5px;
+    top: 31px;
+    width: 633.5px;
+    height: 719.5px;
+    background: url('./img/patient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .panel {
+    top: 60.5px;
+    width: 553.5px;
+    height: 220px;
+    &:before{
+      transform: skew(-15deg);
+    }
+    &__text {
+      background-image: url(img/text_1.png);
+      background-size: 100%;
+      width: 373.5px;
+      height: 148px;
+      transform: translate(-53%,-50%);
+    }
+  }
+  .lists {
+    position: absolute;
+    left: 50px;
+    top: 324.5px;
+    width: 297.5px;
+    height: 314.5px;
+    display: flex;
+    flex-direction: column;
+    &__list {
+      width: auto;
+      display: table;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: solid 4px #a0d1dd;
+    }
+  }
+}

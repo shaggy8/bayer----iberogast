@@ -1,0 +1,24 @@
+.slide_2_73{
+  background: url('./img/2_73.jpg');
+  background-size: contain;
+  position: relative;
+  .text{
+    position: absolute;
+    left: calc(188px/2);
+    top: calc(366px/2);
+    width: calc(756px/2);
+    height: calc(679px/2);
+    background: url('./img/text.png');
+    background-size: contain;
+    animation: fadeInRightShort .3s both;
+  }
+  .reference_text{
+    background: url('./img/reference_text.png');
+    background-size: contain;
+    width: calc(1688px/2);
+    height: calc(65px/2);
+    left: 52px;
+    top: 45%;
+    position: absolute;;
+  }
+}

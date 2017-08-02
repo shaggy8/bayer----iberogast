@@ -1,0 +1,224 @@
+.slide_2_146 {
+  background-color: #dbf6fd;
+  background-size: 100%;
+
+  .panel_left {
+    position: absolute;
+    left: 0;
+    top: 99px;
+    width: 603px;
+    height: 498px;
+    &:before {
+      transform: none;
+      background-image: none;
+      background-color: #c8eaf2;
+    }
+  }
+
+  .panel_right {
+    left: 603px;
+    top: 99px;
+    width: 563px;
+    height: 498px;
+    animation-delay: .3s;
+  &:before {
+     transform: none;
+     background-image: linear-gradient(135deg, rgba(0, 120, 41, 1) 0%, rgba(95, 200, 42, 1) 42%, rgba(216, 127, 61, 1) 58%, rgba(234, 65, 65, 1) 100%);
+     transition: background 1.3s;
+     background-size: 300%;
+     background-position: 93% 87%;
+   }
+  }
+
+  .text_1 {
+    display: none;
+    position: absolute;
+    left: 35px;
+    top: 41px;
+    width: 720px;
+    height: 26px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+
+  .text_2 {
+    display: none;
+    position: absolute;
+    left: 35px;
+    top: 41px;
+    width: 720px;
+    height: 26px;
+    background-image: url(img/text_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+
+  .sections_content {
+    animation: fadeIn .5s ease both 1.3s;
+  }
+
+  .sections_headers {
+    position: absolute;
+    left: 34px;
+    top: 124px;
+    width: 744px;
+    height: 23px;
+    background-image: url(img/sections_headers.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .left_text {
+    position: absolute;
+    left: 70px;
+    top: 243px;
+    width: 456px;
+    height: 329px;
+    background-image: url(img/left_text.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .popup_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(18, 75, 90, 0.33);
+    animation: fadeIn .5s ease both;
+  }
+
+  .pop_btn {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .btn_1 {
+    left: 253px;
+    top: 233px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .btn_2 {
+    left: 253px;
+    top: 339px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .btn_3 {
+    left: 509px;
+    top: 437px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .popup {
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: none;
+  }
+
+  .popup_1 {
+    left: 251px;
+    top: 182px;
+    width: 475px;
+    height: 564px;
+    background-image: url(img/popup_1.png);
+  }
+
+  .popup_2 {
+    left: 254px;
+    top: 290px;
+    width: 378px;
+    height: 184px;
+    background-image: url(img/popup_2.png);
+  }
+
+  .popup_3 {
+    left: 209px;
+    top: 386px;
+    width: 376px;
+    height: 280px;
+    background-image: url(img/popup_3.png);
+  }
+
+  .right_text {
+    position: absolute;
+    left: 633px;
+    top: 184px;
+    width: 354px;
+    height: 338px;
+    background-image: url(img/right_text.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: opacity .5s ease;
+  }
+
+  .left_text_pre {
+    opacity: 0;
+    transition: opacity .5s ease;
+    position: absolute;
+    left: 25px;
+    top: 233px;
+    width: 559px;
+    height: 328px;
+    background-image: url(img/left_text_pre.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    &_2 {
+      opacity: 0;
+      transition: opacity .5s ease;
+      position: absolute;
+      left: 17px;
+      top: 229px;
+      width: 371px;
+      height: 346px;
+      background-image: url(img/left_text_pre_2.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .button {
+    left: 383px;
+    top: 611px;
+    animation: fadeIn .5s ease both 1.5s;
+  }
+
+
+  &[data-state='0'] {
+    .left_text_pre {
+      opacity: 1;
+    }
+    .text_1 {
+     display: block;
+    }
+  }
+
+  &[data-state='1'] {
+    .pop_btn {
+      display: none;
+    }
+    .text_2 {
+     display: block;
+    }
+    .right_text {
+      opacity: .5;
+    }
+    .left_text_pre_2 {
+      opacity: 1;
+    }
+    .panel_right:before {
+      background-position: 0 0;
+    }
+  }
+
+}
+

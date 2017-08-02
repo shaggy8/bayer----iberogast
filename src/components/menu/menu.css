@@ -1,0 +1,355 @@
+.menu-wrapper{
+	position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  animation: fadeIn 0.3s;
+  * {
+		background-size: contain;
+		background-repeat: no-repeat;
+  }  
+  .preview-box{
+  	position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(1024px - 455px);
+    height: 768px; 
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    /*justify-content: space-around;*/
+  	.slide-preview{
+		  margin-bottom: 20px;
+    	/* opacity: 0;
+    	transform: scale(0);
+    	transition: width 0.5s,
+    							height 0.5s,
+    							background 0.5s; */
+    	transition: background 0.7s;
+	   	animation: fadeIn 0.7s both;
+	   	&.col-1{
+	   		width: 489px;
+		    height: 366.75px;
+	   	}
+  		&.col-2{
+	  		width: 224.5px;
+		    height: 168px;
+		    &:nth-child(2n+1){
+		    	margin-right: 20px;	
+		    }
+		    &:nth-child(2n){
+		    	margin-left: 20px;	
+		    }
+  		}
+  		&.col-3{
+	  		width: 143px;
+		    height: 107px;
+		    &:nth-child(3n+1){
+		    	margin-right: 15px;	
+		    }
+		    &:nth-child(3n+2){
+		    	margin: 0 15px;
+		    	margin-bottom: 20px;	
+		    }
+		    &:nth-child(3n+3){
+		    	margin-left: 15px;	
+		    }			
+  		}
+  		&.col-4{
+	  		width: 112.25px;
+		    height: 84px;
+		    &:nth-child(4n+1){
+		    	margin-right: 6px;	
+		    }
+		    &:nth-child(4n+2),
+		    &:nth-child(4n+3){
+		    	margin: 0 6px;
+		    	margin-bottom: 20px;	
+		    }
+		    &:nth-child(4n+4){
+		    	margin-left: 6px;	
+		    } 			
+  		}
+			&.s00{background-image: url('./img/00.jpg');}
+		  &.s1_02{background-image: url('./img/1_02.jpg');}
+		  &.s1_03{background-image: url('./img/1_03.jpg');}
+		  &.s1_04{background-image: url('./img/1_04.jpg');}
+		  &.s1_05{background-image: url('./img/1_05.jpg');}
+		  &.s1_06{background-image: url('./img/1_06.jpg');}
+		  &.s1_07{background-image: url('./img/1_07.jpg');}
+		  &.s1_08{background-image: url('./img/1_08.jpg');}
+		  &.s1_09{background-image: url('./img/1_09.jpg');}
+		  &.s1_10{background-image: url('./img/1_10.jpg');}
+		  &.s1_13{background-image: url('./img/1_13.jpg');}
+		  &.s1_14{background-image: url('./img/1_14.jpg');}
+		  &.s1_15{background-image: url('./img/1_15.jpg');}
+		  &.s1_16{background-image: url('./img/1_16.jpg');}
+		  &.s1_17{background-image: url('./img/1_17.jpg');}
+		  &.s1_18{background-image: url('./img/1_18.jpg');}
+		  &.s1_19{background-image: url('./img/1_19.jpg');}
+		  &.s1_20{background-image: url('./img/1_20.jpg');}
+		  &.s1_21{background-image: url('./img/1_21.jpg');}
+		  &.s1_23{background-image: url('./img/1_23.jpg');}
+		  &.s1_24{background-image: url('./img/1_24.jpg');}
+		  &.s1_25{background-image: url('./img/1_25.jpg');}
+		  &.s1_26{background-image: url('./img/1_26.jpg');}
+		  &.s1_27{background-image: url('./img/1_27.jpg');}
+		  &.s1_29{background-image: url('./img/1_29.jpg');}
+		  &.s1_30{background-image: url('./img/1_30.jpg');}
+		  &.s1_31{background-image: url('./img/1_31.jpg');}
+		  &.s1_35{background-image: url('./img/1_35.jpg');}
+		  &.s1_36{background-image: url('./img/1_36.jpg');}
+		  &.s1_37{background-image: url('./img/1_37.jpg');}
+		  &.s1_38{background-image: url('./img/1_38.jpg');}
+		  &.s1_39{background-image: url('./img/1_39.jpg');}
+		  &.s1_40{background-image: url('./img/1_40.jpg');}
+		  &.s1_41{background-image: url('./img/1_41.jpg');}
+		  &.s1_43{background-image: url('./img/1_43.jpg');}
+		  &.s1_44{background-image: url('./img/1_44.jpg');}
+		  &.s1_45{background-image: url('./img/1_45.jpg');}
+		  &.s1_46{background-image: url('./img/1_46.jpg');}
+		  &.s1_47{background-image: url('./img/1_47.jpg');}
+		  &.s1_48{background-image: url('./img/1_48.jpg');}
+		  &.s1_49{background-image: url('./img/1_49.jpg');}
+		  &.s1_50{background-image: url('./img/1_50.jpg');}
+		  &.s1_51{background-image: url('./img/1_51.jpg');}
+		  &.s1_52{background-image: url('./img/1_52.jpg');}
+		  &.s1_53{background-image: url('./img/1_53.jpg');}
+		  &.s1_54{background-image: url('./img/1_54.jpg');}
+		  &.s1_55{background-image: url('./img/1_55.jpg');}
+		  &.s1_56{background-image: url('./img/1_56.jpg');}
+		  &.s1_57{background-image: url('./img/1_57.jpg');}
+		  &.s1_58{background-image: url('./img/1_58.jpg');}
+		  &.s1_59{background-image: url('./img/1_59.jpg');}
+		  &.s1_60{background-image: url('./img/1_60.jpg');}
+		  &.s1_61{background-image: url('./img/1_61.jpg');}
+		  &.s1_63{background-image: url('./img/1_63.jpg');}
+		  &.s1_64{background-image: url('./img/1_64.jpg');}
+		  &.s1_65{background-image: url('./img/1_65.jpg');}
+		  &.s1_67{background-image: url('./img/1_67.jpg');}
+		  &.s1_68{background-image: url('./img/1_68.jpg');}
+		  &.s2_69{background-image: url('./img/2_69.jpg');}
+		  &.s2_69_1{background-image: url('./img/2_69_1.jpg');}
+		  &.s2_70{background-image: url('./img/2_70.jpg');}
+		  &.s2_71{background-image: url('./img/2_71.jpg');}
+		  &.s2_72{background-image: url('./img/2_72.jpg');}
+		  &.s2_73{background-image: url('./img/2_73.jpg');}
+		  &.s2_74{background-image: url('./img/2_74.jpg');}
+		  &.s2_75{background-image: url('./img/2_75.jpg');}
+		  &.s2_76{background-image: url('./img/2_76.jpg');}
+		  &.s2_77{background-image: url('./img/2_77.jpg');}
+		  &.s2_107{background-image: url('./img/2_107.jpg');}
+		  &.s2_108{background-image: url('./img/2_108.jpg');}
+		  &.s2_109{background-image: url('./img/2_109.jpg');}
+		  &.s2_110{background-image: url('./img/2_110.jpg');}
+		  &.s2_111{background-image: url('./img/2_111.jpg');}
+		  &.s2_112{background-image: url('./img/2_112.jpg');}
+		  &.s2_113{background-image: url('./img/2_113.jpg');}
+		  &.s2_114{background-image: url('./img/2_114.jpg');}
+		  &.s2_115{background-image: url('./img/2_115.jpg');}
+		  &.s2_116{background-image: url('./img/2_116.jpg');}
+		  &.s2_117{background-image: url('./img/2_117.jpg');}
+		  &.s2_118{background-image: url('./img/2_118.jpg');}
+		  &.s2_120{background-image: url('./img/2_120.jpg');}
+		  &.s2_121{background-image: url('./img/2_121.jpg');}
+		  &.s2_122{background-image: url('./img/2_122.jpg');}
+		  &.s2_123{background-image: url('./img/2_123.jpg');}
+		  &.s2_125{background-image: url('./img/2_125.jpg');}
+		  &.s2_128{background-image: url('./img/2_128.jpg');}
+		  &.s2_129{background-image: url('./img/2_129.jpg');}
+		  &.s2_130{background-image: url('./img/2_130.jpg');}
+		  &.s2_131{background-image: url('./img/2_131.jpg');}
+		  &.s2_132{background-image: url('./img/2_132.jpg');}
+		  &.s2_136{background-image: url('./img/2_136.jpg');}
+		  &.s2_138{background-image: url('./img/2_138.jpg');}
+		  &.s2_139{background-image: url('./img/2_139.jpg');}
+		  &.s2_140{background-image: url('./img/2_140.jpg');}
+		  &.s2_142{background-image: url('./img/2_142.jpg');}
+		  &.s2_143{background-image: url('./img/2_143.jpg');}
+		  &.s2_144{background-image: url('./img/2_144.jpg');}
+		  &.s2_145{background-image: url('./img/2_145.jpg');}
+		  &.s2_147{background-image: url('./img/2_147.jpg');}
+		  &.s2_148{background-image: url('./img/2_148.jpg');}
+		  &.s2_133{background-image: url('./img/2_133.jpg');}
+		  &.s2_134{background-image: url('./img/2_134.jpg');}
+		  &.s2_146{background-image: url('./img/2_146.jpg');}
+		  &.s2_135{background-image: url('./img/2_135.jpg');}
+		  &.s3_119{background-image: url('./img/3_119.jpg');}
+		  &.s3_119_1{background-image: url('./img/3_119_1.jpg');}
+		  &.s3_120{background-image: url('./img/3_120.jpg');}
+		  &.s3_121{background-image: url('./img/3_121.jpg');}
+		  &.s3_122{background-image: url('./img/3_122.jpg');}
+		  &.s2_126{background-image: url('./img/2_126.jpg');}
+		  &.s2_127{background-image: url('./img/2_127.jpg');}
+		  &.s3_146{background-image: url('./img/3_146.jpg');}
+		  &.s3_147{background-image: url('./img/3_147.jpg');}
+		  &.s3_148{background-image: url('./img/3_148.jpg');}
+		  &.s3_149{background-image: url('./img/3_149.jpg');}
+		  &.s3_150{background-image: url('./img/3_150.jpg');}
+		  &.s3_151{background-image: url('./img/3_151.jpg');}
+		  &.s3_153{background-image: url('./img/3_153.jpg');}
+		  &.s3_154{background-image: url('./img/3_154.jpg');}
+		  &.s3_155{background-image: url('./img/3_155.jpg');}
+		  &.s3_157{background-image: url('./img/3_157.jpg');}
+		  &.s3_158{background-image: url('./img/3_158.jpg');}
+		  &.s3_160{background-image: url('./img/3_160.jpg');}
+		  &.s3_161{background-image: url('./img/3_161.jpg');}
+		  &.s3_162{background-image: url('./img/3_162.jpg');}
+		  &.s3_163{background-image: url('./img/3_163.jpg');}
+		  &.s3_165{background-image: url('./img/3_165.jpg');}
+		  &.s3_166{background-image: url('./img/3_166.jpg');}
+		  &.s3_168{background-image: url('./img/3_168.jpg');}
+		  &.s3_169{background-image: url('./img/3_169.jpg');}
+		  &.s3_170{background-image: url('./img/3_170.jpg');}
+		  &.s3_172{background-image: url('./img/3_172.jpg');}
+		  &.s3_173{background-image: url('./img/3_173.jpg');}
+		  &.s3_173_1{background-image: url('./img/3_173_1.jpg');}
+		  &.s3_174{background-image: url('./img/3_174.jpg');}
+		  &.s3_175{background-image: url('./img/3_175.jpg');}
+		  &.s3_176{background-image: url('./img/3_176.jpg');}
+		  &.s3_177{background-image: url('./img/3_177.jpg');}
+		  &.s3_178{background-image: url('./img/3_178.jpg');}
+		  &.s3_179{background-image: url('./img/3_179.jpg');}
+		  &.s3_180{background-image: url('./img/3_180.jpg');}
+		  &.s3_181{background-image: url('./img/3_181.jpg');}
+		  &.s3_182{background-image: url('./img/3_182.jpg');}
+		  &.s3_184{background-image: url('./img/3_184.jpg');}
+		  &.s3_185{background-image: url('./img/3_185.jpg');}
+		  &.s3_186{background-image: url('./img/3_186.jpg');}
+		  &.s3_188{background-image: url('./img/3_188.jpg');}
+		  &.s3_189{background-image: url('./img/3_189.jpg');}
+		  &.s4_161{background-image: url('./img/4_161.jpg');}
+		  &.s4_161_1{background-image: url('./img/4_161_1.jpg');}
+		  &.s4_162{background-image: url('./img/4_162.jpg');}
+		  &.s4_163{background-image: url('./img/4_163.jpg');}
+		  &.s4_164{background-image: url('./img/4_164.jpg');}
+		  &.s4_165{background-image: url('./img/4_165.jpg');}
+		  &.s4_166{background-image: url('./img/4_166.jpg');}
+		  &.s4_168{background-image: url('./img/4_168.jpg');}
+		  &.s4_169{background-image: url('./img/4_169.jpg');}
+		  &.s4_170{background-image: url('./img/4_170.jpg');}
+		  &.s4_172{background-image: url('./img/4_172.jpg');}
+		  &.s4_173{background-image: url('./img/4_173.jpg');}
+		  &.s4_175{background-image: url('./img/4_175.jpg');}
+		  &.s4_176{background-image: url('./img/4_176.jpg');}
+		  &.s4_177{background-image: url('./img/4_177.jpg');}
+		  &.s4_178{background-image: url('./img/4_178.jpg');}
+		  &.s4_180{background-image: url('./img/4_180.jpg');}
+		  &.s4_181{background-image: url('./img/4_181.jpg');}
+		  &.s4_184{background-image: url('./img/4_184.jpg');}
+		  &.s4_185{background-image: url('./img/4_185.jpg');}
+		  &.s4_186{background-image: url('./img/4_186.jpg');}
+		  &.s4_187{background-image: url('./img/4_187.jpg');}
+		  &.s4_188{background-image: url('./img/4_188.jpg');}
+		  &.s4_190{background-image: url('./img/4_190.jpg');}
+		  &.s4_191{background-image: url('./img/4_191.jpg');}
+		  &.s4_192{background-image: url('./img/4_192.jpg');}
+		  &.s4_193{background-image: url('./img/4_193.jpg');}
+		  &.s4_194{background-image: url('./img/4_194.jpg');}
+		  &.s4_195{background-image: url('./img/4_195.jpg');}
+		  &.s4_196{background-image: url('./img/4_196.jpg');}
+		  &.s4_197{background-image: url('./img/4_197.jpg');}
+		  &.s4_198{background-image: url('./img/4_198.jpg');}
+		  &.s4_199{background-image: url('./img/4_199.jpg');}
+		  &.s4_200{background-image: url('./img/4_200.jpg');}
+		  &.s4_201{background-image: url('./img/4_201.jpg');}
+		  &.s4_202{background-image: url('./img/4_202.jpg');}
+		  &.s4_203{background-image: url('./img/4_203.jpg');}
+		  &.s4_204{background-image: url('./img/4_204.jpg');}
+		  &.s4_205{background-image: url('./img/4_205.jpg');}
+		  &.s4_206{background-image: url('./img/4_206.jpg');}
+		  &.s4_207{background-image: url('./img/4_207.jpg');}
+		  &.s4_208{background-image: url('./img/4_208.jpg');}
+		  &.s4_209{background-image: url('./img/4_209.jpg');}
+		  &.s4_211{background-image: url('./img/4_211.jpg');}
+		  &.s4_212{background-image: url('./img/4_212.jpg');}
+		  &.s4_213{background-image: url('./img/4_213.jpg');}
+		  &.s4_215{background-image: url('./img/4_215.jpg');}
+		  &.s4_216{background-image: url('./img/4_216.jpg');}
+		  &.s4_217{background-image: url('./img/4_217.jpg');}
+		  &.s4_218{background-image: url('./img/4_218.jpg');}
+		  &.s4_219{background-image: url('./img/4_219.jpg');}
+		  &.s4_220{background-image: url('./img/4_220.jpg');} 
+		  &.sinstruction{background-image: url('./img/instruction.jpg');} 
+  	}
+  }
+	.menu-box {
+		position: absolute;
+		left: 569px;
+		top: 0;
+		width: 455px;
+		height: 768px;
+		background-image: url('./img/menu-box.jpg');
+		animation: fadeInLeftShort .5s .15s both;
+		.arrow{			
+			display: none;
+			position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 10.5px;
+	    height: 22px;
+			background-image: url('./img/arrow.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: all .5s;
+		}
+		.menu-list{
+			padding-left: 67.5px;
+	    padding-right: 80px;
+	    position: absolute;
+	    top: 40px;
+	    &__item{	    	
+	    	height: 75px;
+		    border-top: 1px solid #e1e1e1;
+		    box-sizing: border-box;
+		    color: #124b5a;
+		    font-size: 20px;
+		    font-weight: 400;
+		    font-family: Lato , sans-serif;
+		    display: flex;
+    		align-items: center;
+    		&.active{
+    			color: #008848;
+    			position: relative;
+    			&::before{
+    				/*content:'';
+    				position: absolute;
+				    left: -67.5px;
+				    top: calc(50% - 11px);
+				    width: 10.5px;
+				    height: 22px;
+						background-image: url('./img/arrow.png');
+						background-size: contain;
+						background-repeat: no-repeat;
+						transition: all .5s;*/
+    			}
+    		}
+    		&:first-child{
+	    		border-top:none;
+	    	}	    	
+	    }
+		}
+	}
+	.close-button{
+		position: absolute;
+		top: 38px;
+		right: 38px;
+		width: 56px;
+		height: 56px;
+		background-image: url('./img/close-btn.png');
+		animation: fadeIn .3s .6s both;
+	}
+
+}
+
+@keyframes scaleUpfadeIn{
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}

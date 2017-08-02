@@ -1,0 +1,32 @@
+.slide_1_18 {
+  background-image: url(img/1_18.jpg);
+  background-size: 100%;
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 26px;
+    width: 420px;
+    height: 26px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+  /* Style for "panel__text" */
+  .panel {
+    left: -65px;
+    top: 129px;
+    width: 531px;
+    height: 496px;
+    &:before {
+      transform: skew(-15deg);
+    }
+  }
+  .panel__text {
+    position: absolute;
+    width: 346px;
+    height: 389px;
+    background-image: url(img/panel__text.png);
+    background-size: 100%;
+  }
+}

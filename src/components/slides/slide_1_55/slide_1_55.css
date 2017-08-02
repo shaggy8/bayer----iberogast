@@ -1,0 +1,126 @@
+.slide_1_55 {
+  background-image: url(img/1_55.jpg);
+  background-size: 100%;
+  .toggle {
+    position: absolute;
+    left: 35px;
+    top: 245px;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+  .slide_state {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  .panel {
+    left: -20px;
+    top: 149px;
+    width: 490px;
+    height: 164px;
+    &__text {
+       left: 226px;
+       top: 88px;
+       width: 410px;
+       height: 200px;
+      background-image: url(img/text_2.png);
+    }
+  }
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 38px;
+    width: 554px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+  .graph_1 {
+    position: absolute;
+    bottom: 103px;
+    left: 60px;
+    width: 950px;
+    height: 328px;
+    background-image: url(img/graph_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .bars_1 {
+    position: absolute;
+    bottom: 47px;
+    left: -64px;
+    width: 920px;
+    height: 240px;
+    background-image: url(img/bars_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform-origin: 0 98%;
+  }
+  .graph1_stars {
+    position: absolute;
+    top: 14px;
+    left: 37px;
+    width: 807px;
+    height: 250px;
+    background-image: url(img/graph1_stars.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .graph_2 {
+    position: absolute;
+    bottom: 103px;
+    left: 59px;
+    width: 944px;
+    height: 328px;
+    background-image: url(img/graph_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .bars_2 {
+    position: absolute;
+    bottom: 52px;
+    left: -47px;
+    width: 915px;
+    height: 240px;
+    background-image: url(img/bars_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform-origin: 0 98%;
+  }
+  .graph2_stars {
+    position: absolute;
+    top: -16px;
+    left: 34px;
+    width: 822px;
+    height: 292px;
+    background-image: url(img/graph2_stars.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &[data-state='0'] {
+     .slide_state_0 {
+       opacity: 1;
+     }
+    .bars_1 {
+      animation: growUp 1s ease both;
+    }
+    .graph1_stars {
+      animation: fadeIn .5s ease 1s both;
+    }
+  }
+
+  &[data-state='1'] {
+     .slide_state_1 {
+       opacity: 1;
+     }
+    .bars_2 {
+      animation: growUp 1s ease both;
+    }
+    .graph2_stars {
+      animation: fadeIn .5s ease 1s both;
+    }
+  }
+}
+

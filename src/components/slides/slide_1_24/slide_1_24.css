@@ -1,0 +1,56 @@
+.slide_1_24 {
+  background-image: url(./img/1_24.jpg);
+  background-size: 100%;
+
+.panel {
+  left: -50px;
+  top: 122px;
+  width: 528px;
+  height: 274px;
+  &__text_1 {
+     top: 144px;
+     left: 241px;
+     width: 296px;
+     height: 191px;
+     background-image: url(img/text_1.png);
+     background-repeat: no-repeat;
+   }
+}
+
+.text_2 {
+  position: absolute;
+  left: 53px;
+  top: 458px;
+  width: 252px;
+  height: 106px;
+  background-image: url(./img/text_2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fadeInRightShort .3s both .3s;
+}
+
+.right_img {
+  position: absolute;
+  left: 335px;
+  top: 30px;
+  width: 676px;
+  height: 668px;
+  background-image: url(./img/right_img.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.flower_shadow {
+  position: absolute;
+  left: 342px;
+  top: 123px;
+  width: 157px;
+  height: 333px;
+  background-image: url(./img/flower_shadow.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fadeIn 1s ease both 1.3s;
+}
+
+
+}

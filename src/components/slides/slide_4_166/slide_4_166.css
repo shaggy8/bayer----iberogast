@@ -1,0 +1,15 @@
+.slide_4_166 {
+  background-image: url(./img/4_166.jpg);
+  background-size: 100%;
+.text {
+  position: absolute;
+  left: 52px;
+  top: 121px;
+  width: 303px;
+  height: 494px;
+  background-image: url(./img/text_1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fadeInRightShort .3s both;
+}
+}

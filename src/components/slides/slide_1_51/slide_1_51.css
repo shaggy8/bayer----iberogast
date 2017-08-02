@@ -1,0 +1,142 @@
+.slide_1_51 {
+  background-image: url(img/1_51.jpg);
+  background-size: 100%;
+  .text_1 {
+    position: absolute;
+    left: 34px;
+    top: 38px;
+    width: 508px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .panel {
+    left: -50px;
+    top: 164px;
+    width: 446px;
+    height: 431px;
+    &__text_1 {
+       left: 131px;
+       top: 140px;
+       width: 159px;
+       height: 308px;
+      background-image: url(img/text_2.png);
+      background-repeat: no-repeat;
+    }
+  }
+  .button {
+    position: absolute;
+    left: 34px;
+    top: 490px;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+  .state_0_descr {
+    position: absolute;
+    left: 51px;
+    top: 234px;
+    width: 281px;
+    height: 31px;
+    background-image: url(img/state_0_descr.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+  .state_1_descr {
+    position: absolute;
+    left: 49px;
+    top: 234px;
+    width: 283px;
+    height: 214px;
+    background-image: url(img/state_1_descr.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .state_2_descr {
+    position: absolute;
+    left: 50px;
+    top: 233px;
+    width: 260px;
+    height: 146px;
+    background-image: url(img/state_2_descr.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .stomach_1 {
+    position: absolute;
+    left: 329px;
+    top: 50px;
+    width: 447px;
+    height: 833px;
+    background-image: url(img/stomach_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .slide_state_1 {
+    display: none;
+    animation: fadeIn 1s ease both;
+  }
+  .slide_state_2 {
+    display: none;
+    animation: fadeIn 1s ease both 3s;
+  }
+
+  .stomach_2 {
+    position: absolute;
+    left: 329px;
+    top: 50px;
+    width: 611px;
+    height: 833px;
+    background-image: url(img/stomach_2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .stomach_3 {
+    position: absolute;
+    left: 351px;
+    top: 50px;
+    width: 589px;
+    height: 833px;
+    background-image: url(img/stomach_3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .bubbles_1 {
+    position: absolute;
+    left: 324px;
+    top: 163px;
+    width: 421px;
+    height: 451px;
+    background-image: url(img/bubbles_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fadeInUpFadeOut 4s linear both infinite 1.7s;
+  }
+
+  &[data-state='1'] {
+    .stomach_1,
+    .bubbles_1,
+    .state_0_descr {
+      animation: fadeOut 1s ease both;
+    }
+
+    .slide_state_1 {
+      display: block;
+    }
+
+    .state_1_descr,
+    .button.drip,
+    .stomach_2 {
+      animation: fadeOut 1s ease both 3s;
+    }
+
+    .slide_state_2 {
+      display: block;
+    }
+
+  }
+
+}

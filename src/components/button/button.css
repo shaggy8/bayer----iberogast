@@ -1,0 +1,64 @@
+.button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 258px;
+  height: 62px;
+  background: linear-gradient(to right, rgba(108, 205, 55, 0) 0%, rgba(59, 133, 35, 0) 28%, rgba(58, 132, 35, 1) 29%, rgba(84, 188, 37, 1) 30%, rgba(84, 188, 37, 0) 31%, rgba(84, 188, 37, 0) 100%), linear-gradient(to bottom, rgba(108, 205, 55, 1) 0%, rgba(108, 205, 55, 1) 49%, rgba(84, 188, 37, 1) 51%, rgba(84, 188, 37, 1) 100%) #5fc82a;
+  border: 2px solid rgba(4, 103, 35, 0.5);
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.19), inset 0 2px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 32px;
+  box-sizing: border-box;
+  color: white;
+  font-family: lato, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 56px;
+  padding-left: calc(258px/3.3);
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 27px;
+    transform: translate(0, -50%);
+  }
+  &.drip:before {
+    position: absolute;
+    height: 35px;
+    background: url('./img/drip_1.png') no-repeat;
+    background-size: cover;
+  }
+  &.plus:before {
+    background-image: url(./img/plus_1.png);
+    background-size: cover;
+  }
+  &.active {
+    background: linear-gradient(to right, #249629 0%, #24993c 28%, rgba(19, 123, 48, 0.7) 29%, #24993c 30%, #249629 100%) #249629;
+    box-shadow: inset 1px 5px 8px rgba(18, 113, 38, 0.5);
+    &.drip:before {
+      background: url('./img/drip.png') no-repeat;
+      background-size: cover;
+      filter: drop-shadow(0 0 9px #72ff7d);
+    }
+    &.plus:before {
+      background-image: url(./img/plus_2.png);
+      background-size: cover;
+    }
+  }
+}
+
+
+/*
+  
+  &:before {
+    background-image: url(img/pluse_1.png);
+    display: block;
+  }
+  &:after {
+    background-image: url(img/pluse_2.png);
+  }
+*/

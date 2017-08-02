@@ -1,0 +1,73 @@
+.slide_2_77{
+  background: url('./img/2_77.jpg');
+  background-size: contain;
+  position: relative;
+  .header{
+    position: absolute;
+    left: 91.5px;
+    top: 65.5px;
+    width: 332.5px;
+    height: 232.5px;
+    background: url('./img/header.png');
+    background-size: contain;
+    animation: fadeInRightShort .3s both;
+  }
+  .box{
+    position: absolute;
+    left: 739.5px;
+    top: 388.5px;
+    width: 276.5px;
+    height: 318.5px;
+    background: url('./img/box.png');
+    background-size: contain;
+    animation: fadeIn .3s both;
+  }
+  .guts{
+    position: absolute;
+    /* width: 454px;
+    left: 471px;
+    top: -53.5px;
+    height: 882.5px; */
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;    
+    background: url('./img/1_09.gif');
+    background-size: contain;
+    animation: fadeIn .3s both;
+  }
+  .text_1{
+    position: absolute;
+    left: 51.5px;
+    top: 354.5px;
+    width: 282.5px;
+    height: 44.5px; 
+    background-image: url('./img/text_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .3s;
+  }
+  .text_2{
+    position: absolute;
+    left: 51.5px;
+    top: 428.5px;
+    width: 330.5px;
+    height: 70px;
+    background-image: url('./img/text_2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .6s;
+  }
+  .text_3{
+    position: absolute;
+    left: 51.5px;
+    top: 539.5px;
+    width: 316.5px;
+    height: 44.5px;
+    background-image: url('./img/text_3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s backwards .9s;
+  }
+
+}

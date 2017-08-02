@@ -1,0 +1,154 @@
+.slide_2_134{
+
+  *{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .toggle{
+    position: absolute;
+    left: 34px;
+    top: 233px;
+    animation: fadeIn .3s 1.2s both;
+  }
+
+  .header{
+    position: absolute;
+    left: 32.5px;
+    top: 36px;
+    width: 564.5px;
+    height: 58px;
+    background-image: url('./img/header.png');
+    animation: fadeInRightShort .3s;
+  }
+
+  .panel{
+    left: -81px;
+    top: 149px;
+    width: 520px;
+    height: 157px;
+    
+    .panel__text{
+      position: absolute;
+      left: 290px;
+      top: 39px;    
+      width: 357px;
+      height: 31px;
+      background-image: url(img/panel__text.png);
+    }
+    .panel__number{
+      position: absolute;
+      left: 160px;
+      top: 76px;
+      width: 157px;
+      height: 177px;
+      background-image: url(img/panel__number.png);
+    }
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background-image: url("img/2_134.jpg");
+  }
+
+  .graph_1{
+    animation: fadeIn .3s both;
+    position: absolute;
+    top: 333px;
+    width: 1024px;
+    height: 328px;
+    .axes_1{
+      position: absolute;
+      left: 51px;
+      top: 5px;
+      width: 959px;
+      height: 328px;
+      background-image: url("img/axes_1.png");  
+    }
+    .bars_1{
+      position: absolute;
+      left: -13px;
+      top: 47px;
+      width: 933px;
+      height: 237px;
+      background-image: url("img/bars_1.png");   
+      animation: grow 1.5s forwards;
+      transform-origin: 0 99%; 
+    }
+    .info_1{
+      position: absolute;
+      opacity: 0;
+      left: 89px;
+      top: 20px;
+      width: 819px;
+      height: 247px;
+      background-image: url("img/info_1.png");
+      animation: fadeIn .5s 1.5s forwards;
+      transform-origin: bottom; 
+    }
+  }
+
+  .graph_2{
+    animation: fadeOut .3s both;
+    position: absolute;
+    left: 0px;
+    top: 332px;
+    width: 997px;
+    height: 347px;
+
+    .axes_2{
+      position: absolute;
+      width: 951px;
+      height: 328px;
+      left: 51px;
+      top: 5px;
+      background-image: url("img/axes_2.png");  
+    }
+    .bars_2{
+      position: absolute;
+      left: 7px;
+      top: 35px;
+      width: 912px;
+      height: 249px;
+      background-image: url("img/bars_2.png");   
+      animation: grow 1.5s forwards;
+      transform-origin: 0 99%; 
+
+    }
+    .info_2{
+      position: absolute;
+      opacity: 0;
+      left: 89px;
+      top: -12px;
+      width: 820px;
+      height: 288px;
+      background-image: url("img/info_2.png");   
+      animation: fadeIn .5s 1.5s forwards;
+      transform-origin: bottom; 
+    }
+  }
+
+  &[data-state='0']{
+    .graph_2{
+      *{
+        animation: none;
+      }
+    }
+  }
+
+  &[data-state='1']{
+    .graph_2{
+      animation: fadeIn .3s both;
+    }
+    .graph_1{
+      animation: fadeOut .3s both;
+      *{
+        animation: none;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,219 @@
+.slide_1_29 {
+  background-image: url(img/1_29.jpg);
+  background-size: 100%;
+  .toggle {
+    position: absolute;
+    left: 35px;
+    top: 549px;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+  .slide_state {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  .panel {
+    left: -40px;
+    top: 299px;
+    width: 544px;
+    height: 344px;
+    &__text {
+       top: 120px;
+       width: 390px;
+       height: 174px;
+      background-image: url(img/text_2.png);
+      transition: background-image .5s ease;
+    }
+  }
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 38px;
+    width: 554px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+
+  .state_1_descr {
+    position: absolute;
+    left: 54px;
+    top: 161px;
+    width: 448px;
+    height: 79px;
+    background-image: url(img/state_1_descr.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s;
+  }
+
+  .state_2_descr {
+    position: absolute;
+    left: 54px;
+    top: 161px;
+    width: 412px;
+    height: 79px;
+    background-image: url(img/state_2_descr.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .graph_1 {
+    position: absolute;
+    left: 571px;
+    top: 144px;
+    width: 390px;
+    height: 471px;
+    background-image: url(img/graph_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .graph1_pin {
+    position: absolute;
+    left: 159px;
+    top: 86px;
+    width: 110px;
+    height: 95px;
+    background-image: url(img/graph1_pin.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform-origin: bottom;
+  }
+  .bars_1 {
+    position: absolute;
+    left: -58px;
+    top: 94px;
+    width: 349px;
+    height: 345px;
+    background-image: url(img/bars_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform-origin: 0 100%;
+  }
+  .graph1_stars {
+    position: absolute;
+    left: 58px;
+    top: 0px;
+    width: 221px;
+    height: 429px;
+    background-image: url(img/graph1_stars.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .graph_2 {
+    position: absolute;
+    left: 481px;
+    top: 130px;
+    width: 497px;
+    height: 488px;
+    background-image: url(img/graph_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .bars_2 {
+    position: absolute;
+    left: 30px;
+    top: 131px;
+    width: 349px;
+    height: 321px;
+    background-image: url(img/bars_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform-origin: 0 100%;
+  }
+  .graph2_stars {
+    position: absolute;
+    top: 45px;
+    left: 145px;
+    width: 223px;
+    height: 392px;
+    background-image: url(img/graph2_stars.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .graph2_pin {
+    position: absolute;
+    left: 249px;
+    top: 90px;
+    width: 110px;
+    height: 95px;
+    background-image: url(img/graph2_pin.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform-origin: bottom;
+  }
+
+  .popupL{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 1024px;
+    height: 768px;
+    background-color: rgba(18,72,90,.3);
+    animation: fadeIn .5s both;
+    z-index: 1;
+    
+    .popupL__content{
+      position: absolute;
+      left: 0;
+      top: 126px;
+      width: 1024px;
+      height: 561px;
+      background-image: url("img/popup_1_29.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .popupL__btn {
+    position: absolute;
+    left: 961px;
+    top: 146px;
+    width: 80px;
+    height: 76px;
+    z-index: 2;
+  }
+
+  .popupL_show{
+    display: block;
+  }
+
+  &[data-state='0'] {
+     .slide_state_0 {
+       opacity: 1;
+     }
+    .bars_1 {
+      animation: growUp 1s ease both;
+    }
+    .graph1_stars {
+      animation: fadeIn .5s ease 1s both;
+    }
+    .graph1_pin {
+      animation: growUpXY .5s ease 1s both;
+    }
+  }
+
+  &[data-state='1'] {
+     .slide_state_1 {
+       opacity: 1;
+     }
+    .bars_2 {
+      animation: growUp 1s ease both;
+    }
+    .graph2_stars {
+      animation: fadeIn .5s ease 1s both;
+    }
+    .graph2_pin {
+      animation: growUpXY .5s ease 1s both;
+    }
+    .panel__text {
+      top: 120px;
+      width: 390px;
+      height: 174px;
+      background-image: url(img/text_3.png);
+    }
+  }
+}
+

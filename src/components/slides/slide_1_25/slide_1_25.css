@@ -1,0 +1,35 @@
+.slide_1_25 {
+  background-image: url(img/1_25.jpg);
+  background-size: 100%;
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 26px;
+    width: 393px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .panel {
+    left: -50px;
+    top: 164px;
+    width: 446px;
+    height: 431px;
+    &__text_1 {
+       top: 170px;
+       left: 250px;
+       width: 324px;
+       height: 191px;
+      background-image: url(img/text_2.png);
+      background-repeat: no-repeat;
+    }
+  }
+  .button {
+    position: absolute;
+    left: 34px;
+    top: 490px;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+}

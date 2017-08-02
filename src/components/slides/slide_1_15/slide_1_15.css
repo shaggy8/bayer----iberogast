@@ -1,0 +1,65 @@
+.slide_1_15 {
+  background-image: url(img/1_15.jpg);
+  background-size: 100%;
+  .panel {
+    left: -53px;
+    top: 399px;
+    width: 551px;
+    height: 239px;
+    .text_2 {
+      left: 57%;
+      position: absolute;
+      width: 415px;
+      height: 166px;
+      background-image: url(img/text_2.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  /* Style for "text_1" */
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 37px;
+    width: 680px;
+    height: 302px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+    background-repeat: no-repeat;
+  }
+  .text_3 {
+    position: absolute;
+    left: 52px;
+    top: 173px;
+    width: 423px;
+    height: 166px;
+    background-image: url(img/text_3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s .1s both;
+  }
+  .bars {
+    position: absolute;
+    left: 470px;
+    top: 141px;
+    width: 505px;
+    height: 459px;
+    background-image: url(img/bars.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform-origin: 50% 100%;
+    animation: toTransformNone .8s both;
+    transform: scale(1, 0);
+  }
+  .numbers {
+    position: absolute;
+    left: 668px;
+    top: 573px;
+    width: 222px;
+    height: 12px;
+    background-image: url(img/numbers.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}

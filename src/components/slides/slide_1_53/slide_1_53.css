@@ -1,0 +1,66 @@
+.slide_1_53 {
+  background-image: url(img/1_53.jpg);
+  background-size: 100%;
+  .toggle {
+    position: absolute;
+    left: 35px;
+    top: 245px;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+  .panel {
+    top: 136px;
+    width: 400px;
+    height: 125px;
+    &__text {
+       width: 280px;
+       height: 66px;
+      background-image: url(img/text_2.png);
+    }
+  }
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 38px;
+    width: 661px;
+    height: 59px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+  .graph_1 {
+    position: absolute;
+    top: 296px;
+    left: 47px;
+    width: 960px;
+    height: 387px;
+    background-image: url(img/graph_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .bars_1 {
+    position: absolute;
+    bottom: 39px;
+    left: -43px;
+    width: 884px;
+    height: 285px;
+    background-image: url(img/bars_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: growUp 1s ease both;
+    transform-origin: 0 98%;
+  }
+  .graph1_stars {
+    position: absolute;
+    top: 38px;
+    left: 37px;
+    width: 710px;
+    height: 267px;
+    background-image: url(img/graph1_stars.png);
+    background-size: 100%;
+    animation: fadeIn .5s ease 1s both;
+    background-repeat: no-repeat;
+  }
+
+}
+

@@ -1,0 +1,29 @@
+.slide_3_120{
+  background-size: 100%;
+  background-image: url(./img/3_120.jpg);
+  .text {
+    position: absolute;
+    left: 84px;
+    top: 72px;
+    width: 414px;
+    height: 114px;
+    background-size: 100%;
+    background-image: url(./img/text_1.png);
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+  .horizontal-slider {
+    left: 77px;
+    top: 567px;
+  }
+  .slider-value {
+    position: absolute;
+    left: 682px;
+    top: 540px;
+    color: #5fc82a;
+    font-family: sans-serif;
+    font-size: 80px;
+  }
+
+
+}

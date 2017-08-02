@@ -1,0 +1,26 @@
+.slide_4_163 {
+  background-image: url(img/4_163.jpg);
+  background-size: 100%;
+  .panel {
+    top: 391px;
+    width: 581px;
+    height: 185px;
+    &__text {
+      width: 486px;
+      height: 99px;
+      background-image: url(img/text_2.png);
+    }
+  }
+  .text_1 {
+    position: absolute;
+    left: 51px;
+    top: 190px;
+    width: 396px;
+    height: 158px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+}
+

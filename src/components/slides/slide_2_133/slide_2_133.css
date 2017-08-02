@@ -1,0 +1,33 @@
+.slide_2_133 {
+  background-image: url(img/2_133.jpg);
+  background-size: 100%;
+  .header {
+    position: absolute;
+    left: 33.5px;
+    top: 38px;
+    width: 547.5px;
+    height: 58px;
+    background-image: url(img/header.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .panel {
+    left: -58px;
+    top: 168.5px;
+    width: 445.5px;
+    height: 431px;
+    &__text_1 {
+      width: 424px;
+      height: 307.5px;
+      transform: translate(-40%,-70%);
+      background-image: url(img/text_on_panel.png);
+      background-size: contain;
+    }
+    .button {
+      position: absolute;
+      transform: translateX(40%);
+      top: 320px;
+    }
+  }
+}

@@ -1,0 +1,176 @@
+.slide_1_49{
+
+  *{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background-image: url("img/1_49.jpg");
+  }
+  .header{
+    position: absolute;
+    left: 34.5px;
+    top: 38.5px;
+    width: 765px;
+    height: 58px;
+    background-image: url('./img/header.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s;
+  }
+  .panel{
+    position: absolute;
+    left: -46px;
+    top: 169px;
+    width: 446px;
+    height: 431px;
+    box-shadow: -38px 12px 35px rgba(0, 0, 0, 0.19);
+    
+    .panel__text_1{
+      position: absolute;
+      left: 250px;
+      top: 113px;
+      width: 298px;
+      height: 84px;
+      background-image: url("img/panel__text_1.png");
+    }
+    .panel__text_2{
+      display: none;
+      position: absolute;
+      top: 216px;
+      left: 247px;
+      width: 292px;
+      height: 302px;
+      background-image: url("img/panel__text_2.png");
+      animation: fadeIn 1s 1.5s both;
+    }
+    .panel__number{
+      top: 141px;
+      left: 171px;
+      width: 245px;
+      height: 314px;
+      background-image: url("img/panel__number.png");
+    }
+    
+  }
+
+  .stomach_1{
+    position: absolute;
+    left: 351px;
+    top: 50px;
+    width: 414px;
+    height: 833px;
+    background-image: url("img/stomach_1.png");
+  }
+
+  .stomach_2{
+    display: none;
+    position: absolute;
+    left: 351px;
+    top: 50px;
+    width: 414px;
+    height: 833px;
+    background-image: url("img/stomach_2.png");
+    animation: fadeIn 6s .5s both;
+  }
+
+  .info_1{
+    position: absolute;
+    left: 763px;
+    top: 213.5px;
+    width: 233px;
+    height: 139px;
+    background-image: url("img/info_1.png");
+    animation: fadeIn .3s both;
+  }
+
+  .info_2{
+    position: absolute;
+    left: 796.5px;
+    top: 486.5px;
+    width: 155.5px;
+    height: 94px;
+    background-image: url("img/info_2.png");
+    animation: fadeIn .3s .2s both;
+  }
+
+  .iberogast{
+    left: 162px;
+    width: 113px;
+    height: 20px;
+    background-image: url("img/iberogast.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    pointer-events: none;
+  }
+
+  .button{
+    left: 222px;
+    top: 340px;
+  }
+
+  .lights{
+    display: none;
+    position: absolute;
+    left: 358px;
+    top: 161px;
+    width: 405px;
+    height: 442px;
+    background-image: url("img/lights.png");
+    animation: zoomIn 1s both, pulse 2s both;
+    animation-iteration-count: 1, infinite;
+  }
+
+
+  &[data-state="1"]{
+    .lights,
+    .stomach_2,
+    .panel__text_2{
+      display: block;
+    }
+
+    .panel__text_1,
+    .button{
+      animation: fadeOut 1s .5s both;    
+    }
+
+
+    .stomach_1{
+      background-image: url(img/stomach_1_2.png);
+      animation: fadeOut 6s .5s both;
+    }
+    
+    .info_1,
+    .info_2{
+      animation: fadeOut .3s both;
+    }
+
+    .info_3{
+      position: absolute;
+      left: 763px;
+      top: 213.5px;
+      width: 233.5px;
+      height: 128px;
+      background-image: url("img/info_3.png");
+      animation: fadeIn .3s both 3s;
+    }
+
+    .info_4{
+      position: absolute;
+      left: 793px;
+      top: 427.5px;
+      width: 210px;
+      height: 153px;
+      background-image: url("img/info_4.png");
+      animation: fadeIn .3s both 3.2s;
+    }
+
+    
+
+  }
+
+}

@@ -1,0 +1,92 @@
+.slide_3_149{
+  width: 1024px;
+  height: 768px;
+  background-color: #e2f9ff;
+  box-shadow: inset 0 2px 125px #b8e5f2;
+  .text_1 {
+    position: absolute;
+    left: 35px;
+    top: 39px;
+    width: 471px;
+    height: 58px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    animation: fadeInRightShort .3s both;
+  }
+  .panel {
+    left: -75px;
+    top: 169px;
+    width: 460px;
+    height: 399px;
+    &__text{
+      left: 50%;
+      width: 213px;
+      height: 139px;
+      top: 143px;
+    }
+    &__text_1 {
+      background-image: url(img/panel__text_1.png);
+    }
+    &__text_2{
+      display: none;
+      left: 56%;
+      top: 200px;
+      width: 327px;
+      height: 346px;
+      background-image: url(img/panel__text_2.png);
+    }
+  }
+  .button{
+    position: absolute;
+    left: 250px;
+    top: 295px;
+  }
+
+  .bg_1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1024px;
+    height: 768px;
+    background-image: url(img/bg_1.jpg);
+    background-size: 100%;
+  }
+  .bg_2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1024px;
+    height: 768px;
+    background-image: url(img/bg_2.jpg);
+    background-size: 100%;
+  }
+
+  .tip{
+    position: absolute;
+    left: 545px;
+    top: 188px;
+    width: 309px;
+    height: 97px;
+    background-size: 100%;    
+    &.tip_1{
+      background-image: url(img/tip_1.png);
+    }
+
+    &.tip_2{
+      background-image: url(img/tip_2.png);
+    }
+  }
+
+  &[data-state='1']{
+    .button,
+    .panel__text_1,
+    .bg_1,
+    .tip_1{
+      animation: fadeOut .7s both;
+    }
+    .panel__text_2{
+      display: block;
+      animation-delay: .4s;
+    }
+  }
+}

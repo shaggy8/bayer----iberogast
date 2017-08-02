@@ -1,0 +1,98 @@
+.slide_1_30{
+
+  *{
+    background-size: contain;
+  }
+
+  .bg{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    background: url("img/1_30.jpg");
+    background-size: contain;
+  }
+
+  .header{
+    position: absolute;
+    left: 34.5px;
+    top: 37px;
+    width: 624px;
+    height: 24.5px;
+    background-image: url(img/header.png);
+    animation: fadeInRightShort .3s;
+  }
+
+  .panel{
+    left: -33px;
+    top: 347px;
+    width: 551px;
+    height: 313px;
+    box-shadow: -38px 12px 35px rgba(0, 0, 0, 0.19);
+    
+    .panel__text{
+      position: absolute;
+      left: 285px;
+      top: 158px;
+      width: 415px;
+      height: 241px;
+      background-image: url(img/panel__text.png);
+    }
+  }
+
+  .graph__values{
+    position: absolute;
+    left: 612px;
+    top: 182px;
+    width: 258px;
+    height: 393px;
+    background-image: url(img/graph__values.png);
+    animation: fadeIn .5s 1.5s both;
+  }
+
+  .graph__bars{
+    position: absolute;
+    left: 563px;
+    top: 171px;
+    width: 310px;
+    height: 409px;
+    background-image: url(img/graph__bars.png);
+    animation: grow 1.5s both;
+    transform-origin: bottom;
+  }
+
+  .popupL{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 1024px;
+    height: 768px;
+    background-color: rgba(18,72,90,.3);
+    animation: fadeIn .5s both;
+    z-index: 1;
+    
+    .popupL__content{
+      position: absolute;
+      left: 0;
+      top: 120px;
+      width: 1024px;
+      height: 561px;
+      background-image: url("img/popupL__content.jpg");
+    }
+  }
+
+  .popupL__btn{
+    position: absolute;
+    left: 970px;
+    top: 149px;
+    width: 62px;
+    height: 58px;
+    z-index: 1;
+  }
+
+  &[data-state='1']{
+    .popupL{
+      display: block;
+    }
+  }
+
+}

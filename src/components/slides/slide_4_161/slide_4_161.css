@@ -1,0 +1,25 @@
+.slide_4_161 {
+  background-image: url(./img/4_161.gif);
+  background-size: 100%;
+  .patient{
+    position: absolute;
+    left: 414.5px;
+    top: -1.5px;
+    width: 550px;
+    height: 994px;
+    background: url('./img/patient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .text {
+    position: absolute;
+    left: 64px;
+    top: 151px;
+    width: 337px;
+    height: 467px;
+    background-image: url(./img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+}

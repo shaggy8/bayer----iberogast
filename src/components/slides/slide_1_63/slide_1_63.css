@@ -1,0 +1,126 @@
+.slide_1_63 {
+  background-image: url(img/1_63.jpg);
+  background-size: 100%;
+  .header{
+    position: absolute;
+    left: 35px;
+    top: 38px;
+    width: 533.5px;
+    height: 26px;
+    background-image: url('./img/header.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+  .panel {
+    top: 374px;
+    left: -45px;
+    width: 550px;
+    height: 290px;
+    &__text {
+       left: 56%;
+       width: 422px;
+       height: 230px;
+      background-image: url(img/text_2.png);
+    }
+  }
+  .text_1 {
+    position: absolute;
+    left: 51px;
+    top: 149px;
+    width: 459px;
+    height: 214px;
+    background-image: url(img/text_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeInRightShort .3s both;
+  }
+  .stomach{
+    position: absolute;
+    left: 694.5px;
+    top: 112.5px;
+    width: 329.5px;
+    height: 655.5px;
+    background-image: url(img/1_63.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .pointer_1{
+    position: absolute;
+    left: 764.5px;
+    top: 144.5px;
+    width: 116.5px;
+    height: 27.5px;
+    background-image: url('./img/pointer_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both;
+  }
+  .pointer_2{
+    position: absolute;
+    left: 658px;
+    top: 177.5px;
+    width: 136.5px;
+    height: 31px;
+    background-image: url('./img/pointer_2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both .1s;
+  }
+  .pointer_3{
+    position: absolute;
+    left: 580px;
+    top: 237px;
+    width: 164.5px;
+    height: 36px;
+    background-image: url('./img/pointer_3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both .2s;
+  }
+  .pointer_4{
+    position: absolute;
+    left: 577.5px;
+    top: 314.5px;
+    width: 122px;
+    height: 34.5px;
+    background-image: url('./img/pointer_4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both .3s;
+  }
+  .pointer_5{
+    position: absolute;
+    left: 564.5px;
+    top: 406.5px;
+    width: 116.5px;
+    height: 31px;
+    background-image: url('./img/pointer_5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both .4s;
+  }
+  .pointer_6{
+    position: absolute;
+    left: 564.5px;
+    top: 494.5px;
+    width: 116.5px;
+    height: 24.5px;
+    background-image: url('./img/pointer_6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both .5s;
+  }
+  .pointer_7{
+    position: absolute;
+    left: 533px;
+    top: 574px;
+    width: 157.5px;
+    height: 33.5px;
+    background-image: url('./img/pointer_7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeIn .3s both .6s;
+  }
+}
+

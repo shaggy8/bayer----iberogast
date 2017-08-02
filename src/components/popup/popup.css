@@ -1,0 +1,30 @@
+
+.popup-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+  background-color: rgba(18,72,90,.3);
+  animation: fadeIn .3s both;
+  .btn-close {
+      position: absolute;
+      right: 3px;
+      top: 10px;
+      width: 56px;
+      height: 56px;
+      background-image: url(img/close-btn.png);
+      background-size: 100%;
+  }
+}
+.popup {
+  position: absolute;
+  top: 117px;
+  width: 991px;
+  height: 534px;
+  background-size: 100%;
+  animation: fadeInRightShort .3s both;
+  img {
+    width: 100%;
+  }
+}

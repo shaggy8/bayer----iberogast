@@ -1,0 +1,182 @@
+.slide_1_41 {
+  background-image: url(img/1_41.jpg);
+  background-size: 100%;
+  .slide_state {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  .header{
+    position: absolute;
+    left: 33.5px;
+    top: 36px;
+    width: 766px;
+    height: 58px;
+    background: url(img/header.png) no-repeat;
+    background-size: contain;
+    animation: fadeInRightShort .3s both;
+  }
+  .text_1 {
+      position: absolute;
+      animation: fadeInRightShort .3s both;
+      transition: 0.3s;
+  }
+  .panel {
+    left: -32px;
+    top: 371.5px;
+    width: 475px;
+    height: 262.5px;
+    .text-on-panel{
+      width: 366.5px;
+      height: 96px;
+      transform: translate(-40%, -100%);
+      background-image: url(img/text-on-panel.png);
+      background-size: contain;
+    }
+  }
+  .toggle {
+    position: absolute;
+    left: 51px;
+    top: 552px;
+    width: 148px;
+    height: 53px;
+    animation: fadeIn .5s ease both 1.7s;
+  }
+  .popupL{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 1024px;
+    height: 768px;
+    background-color: rgba(18,72,90,.3);
+    animation: fadeIn .5s both;
+    z-index: 1;
+    
+    .popupL__content{
+      position: absolute;
+      left: 0;
+      top: 126px;
+      width: 1024px;
+      height: 561px;
+      background-image: url("img/pop_up.jpg");
+      background-size: contain;
+    }
+  }
+
+  .popupL__btn{
+    position: absolute;
+    left: 970px;
+    top: 149px;
+    width: 62px;
+    height: 58px;
+    z-index: 1;
+  }
+
+  .popupL_show{
+    display: block;
+  }
+
+
+  &[data-state='0'] {
+     .slide_state_0 {
+       opacity: 1;
+     }
+    .graph-coord {
+      position: absolute;
+      left: 494px;
+      top: 235px;
+      width: 480.5px;
+      height: 430.5px;
+      background: url(img/graph-coord-1.png) no-repeat;
+      background-size: contain;
+    }
+    .graph-stars-1{
+      position: absolute;
+      width: 259px;
+      height: 339px;
+      left: 634px;
+      top: 263px;
+      background: url(img/graph_stars_1.png) no-repeat;
+      background-size: contain;
+      transform-origin: 0 98%;
+      animation: fadeIn .5s ease 1.5s both;
+    }
+    .graph-stars-2{
+      display: none;
+    }
+    .graph-lines-1{
+      position: absolute;
+      width: 297px;
+      height: 339px;
+      left: 595px;
+      top: 246px;
+      background: url(img/graph_1.png) no-repeat;        
+      background-size: contain;
+      animation: fadeIn 1s both .15s;
+    }
+    .graph-lines-2{
+      display: none;
+    }
+    .text_1 {
+      left: 51px;
+      top: 205.5px;
+      width: 406px;
+      height: 114px;
+      background-image: url(img/text_1.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &[data-state='1'] {
+     .slide_state_1 {
+       opacity: 1;
+     }
+    .graph-coord {
+      position: absolute;
+      left: 494px;
+      top: 235px;
+      width: 480.5px;
+      height: 430.5px;
+      background: url(img/graph-coord-2.png) no-repeat;
+      background-size: contain;
+    }
+    .graph-stars-1{
+      display: none;
+    }
+    .graph-stars-2{
+      position: absolute;
+      width: 233px;
+      height: 339px;
+      left: 677px;
+      top: 307px;
+      background: url(img/graph_stars_2.png) no-repeat;
+      background-size: contain;
+      transform-origin: 0 98%;
+      animation: fadeIn .5s ease 1.5s both;
+    }
+    .graph-lines-1{
+      display: none;
+    }
+    .graph-lines-2{
+      display: block;
+      position: absolute;
+      width: 333px;
+      height: 350px;
+      left: 578px;
+      top: 264px;
+      background: url(img/graph_2.png) no-repeat;
+      animation: fadeIn 1s both .15s;
+      background-size: contain;
+    }
+    .text_1 {
+      left: 51px;
+      top: 205.5px;
+      width: 397px;
+      height: 115px;
+      background-image: url(img/text_2.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
