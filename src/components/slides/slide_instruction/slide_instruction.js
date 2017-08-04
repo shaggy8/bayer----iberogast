@@ -31,6 +31,7 @@ export default class slide_instruction extends Slide {
 <br />
 <p><b>ДЛЯ ИСПОЛЬЗОВАНИЯ СРЕДИ ПРОФЕССИОНАЛОВ ЗДРАВООХРАНЕНИЯ.</b></p>
 </div>
+        <div className='approve'>L.BY.MKT.08.2017.0149</div>
       </div>
     );
   }
